@@ -24,6 +24,12 @@
 
 <br>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=taein0926&layout=compact"/>
+</div>
+
+<br>
+
 <h3 align="center">🛠️ Tools 🛠️</h3>
 <div align="center">
   <img src="https://img.shields.io/badge/git-F05033.svg?style=for-the-badge&logo=git&logoColor=white" />&nbsp
