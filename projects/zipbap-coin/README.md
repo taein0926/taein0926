@@ -16,7 +16,7 @@ React·Axios로 식재료 등록과 레시피 상세 화면을 개발했습니�
 | 레시피 상세 | API의 재료·조리 순서·영양 정보 연결, 문자열을 목록으로 표시, 리뷰를 반영한 재료 목록 접기·펼치기와 화살표 표현 | [#36](https://github.com/24-1-LikePotato/Zipbap-Coin-FE/pull/36) |
 
 등록 버튼을 누른 사실과 서버가 등록을 완료한 결과를 구분해, 성공 응답을 확인한 뒤에만 다음 화면으로 이동하도록 했습니다.
-레시피 화면은 서버에서 받은 정보를 표시하는 프론트엔드 연동 작업입니다. 이 저장소의 팀 전체 기능이나 백엔드 API를 모두 단독 개발한 것은 아닙니다.
+레시피 화면은 서버에서 받은 정보를 표시하는 프론트엔드 연동 작업입니다. 팀 전체 기능이나 백엔드 API를 모두 단독 개발한 것은 아닙니다.
 
 ## 코드에서 볼 부분
 
@@ -28,11 +28,11 @@ React·Axios로 식재료 등록과 레시피 상세 화면을 개발했습니�
 ## 기술
 
 JavaScript, React, styled-components, Axios, React Router를 사용했습니다.
-Create React App 기반 프로젝트이며 스크립트와 의존성은 [package.json](https://github.com/24-1-LikePotato/Zipbap-Coin-FE/blob/main/package.json)에 있습니다.
+팀 프론트엔드는 Create React App 기반이며 스크립트와 의존성은 [package.json](https://github.com/24-1-LikePotato/Zipbap-Coin-FE/blob/main/package.json)에 있습니다.
 
-## 실행
+## 원본 실행 참고
 
-저장소 루트에서 실행합니다.
+팀 원본 저장소를 받은 뒤 해당 저장소 루트에서 실행합니다.
 
 ```bash
 npm install
