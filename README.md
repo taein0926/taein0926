@@ -10,7 +10,7 @@ TypeScript·React로 사용자 화면을 만들고, Python 서버·데이터·AI
 | [안전골목](https://github.com/taein0926/SafeAlley) | 보행 조건에 맞는 경로 추천. 공간정보 처리, AI 기능 구현·연동, 서버·지도 화면 연결과 배포 확인 | TypeScript, React, CesiumJS, Python, FastAPI, PostGIS |
 | [PinUp](projects/pinup/README.md) | 지도 기반 맛집 리뷰 팀 프로젝트. 검색바·가게 카드·이미지 슬라이더, 목록/리뷰 화면 전환과 리뷰 반영 | TypeScript, React, styled-components |
 | [AI 페르소나](https://github.com/taein0926/ai-persona) | 화재 대피 시뮬레이션 PoC. 기존 엔진에 개인별 LLM 판단을 연결하고 판단·이동 결과를 기록·표시 | Python, Ollama, JavaScript, Docker |
-| [집밥코인](https://github.com/24-1-LikePotato/Zipbap-Coin-FE) | 식재료 관리·레시피 팀 프로젝트. 등록 입력 검사, API 응답 처리와 레시피 상세 화면 | JavaScript, React, Axios |
+| [집밥코인](projects/zipbap-coin/README.md) | 식재료 관리·레시피 팀 프로젝트. 등록 입력 검사, API 응답 처리와 레시피 상세 화면 | JavaScript, React, Axios |
 
 AI 페르소나는 개발 중인 PoC이며 [공개 화면](https://taein0926.github.io/ai-persona/)에서는 저장된 결과를 재생할 수 있습니다.
 팀 프로젝트의 담당 범위와 관련 PR은 각 소개 문서에서 확인할 수 있습니다.
