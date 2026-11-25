@@ -2,6 +2,8 @@
 
 Python으로 서버와 AI 기능을 연결하고, TypeScript와 React로 사용자 화면을 개발합니다. 구현한 기능이 의도대로 동작하는지 테스트와 실험으로 확인합니다.
 
+`kimtaein0926@gmail.com`
+
 ## 대표 프로젝트
 
 ### 안전골목
@@ -29,5 +31,3 @@ Python으로 서버와 AI 기능을 연결하고, TypeScript와 React로 사용�
 - **집밥코인** — 식재료 등록의 입력과 API 응답을 처리하고, 레시피의 재료·조리 순서·영양 정보를 상세 화면에 연결했습니다. [담당 작업과 PR](https://github.com/taein0926/taein0926/blob/main/projects/zipbap-coin/README.md)
 - **PinUp** — 지도 기반 맛집 리뷰의 검색바와 가게 카드를 개발하고, 목록과 리뷰 상세를 오갈 때 헤더가 바뀌도록 연결했습니다. [담당 작업과 PR](https://github.com/taein0926/taein0926/blob/main/projects/pinup/README.md)
 - **GDGoC INHA 모집 웹페이지** — 모바일 너비에 맞춰 레이아웃을 조정하고, 브라우저 높이가 바뀌면 표시 영역의 높이를 다시 계산했습니다. [모바일 대응 PR](https://github.com/GDGoCINHA/23-24_Web_Promotion_Landing_Page/pull/2) · [높이 처리 PR](https://github.com/GDGoCINHA/23-24_Web_Promotion_Landing_Page/pull/4)
-
-[이메일](mailto:kimtaein0926@gmail.com)
