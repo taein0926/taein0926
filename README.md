@@ -1,37 +1,33 @@
 # 김태인 | Taein Kim
 
-TypeScript·React로 사용자 화면을 만들고, Python 서버·데이터·AI 기능을 연결합니다.
-입력한 요청과 실제 처리 결과가 화면에서 어떻게 전달되는지 살피며 개발합니다.
+Python으로 서버와 AI 기능을 연결하고, TypeScript와 React로 사용자 화면을 개발합니다. 구현한 기능이 의도대로 동작하는지 테스트와 실험으로 확인합니다.
 
-## 주요 프로젝트
+## 대표 프로젝트
 
-| 프로젝트 | 서비스와 담당 작업 | 기술 |
-| --- | --- | --- |
-| [안전골목](https://github.com/taein0926/SafeAlley) | 보행 조건에 맞는 경로 추천. 공간정보 처리, AI 기능 구현·연동, 서버·지도 화면 연결과 배포 확인 | TypeScript, React, CesiumJS, Python, FastAPI, PostGIS |
-| [PinUp](projects/pinup/README.md) | 지도 기반 맛집 리뷰 팀 프로젝트. 검색바·가게 카드·이미지 슬라이더, 목록/리뷰 화면 전환과 리뷰 반영 | TypeScript, React, styled-components |
-| [AI 페르소나](https://github.com/taein0926/ai-persona) | 화재 대피 시뮬레이션 PoC. 기존 엔진에 개인별 LLM 판단을 연결하고 판단·이동 결과를 기록·표시 | Python, Ollama, JavaScript, Docker |
-| [집밥코인](projects/zipbap-coin/README.md) | 식재료 관리·레시피 팀 프로젝트. 등록 입력 검사, API 응답 처리와 레시피 상세 화면 | JavaScript, React, Axios |
+### 안전골목
 
-AI 페르소나는 개발 중인 PoC이며 [공개 화면](https://taein0926.github.io/ai-persona/)에서는 저장된 결과를 재생할 수 있습니다.
-팀 프로젝트의 담당 범위와 관련 PR은 각 소개 문서에서 확인할 수 있습니다.
+보행자가 요청한 조건에 맞춰 인천 미추홀구의 경로를 비교하는 웹 서비스입니다. 자연어·음성 입력을 구현해 추출한 조건을 원문과 대조하고, 경로 계산에 실제 사용한 조건을 지도에 표시했습니다.
 
-## 개발할 때 살피는 부분
+[저장소](https://github.com/taein0926/SafeAlley) · [조건 검증](https://github.com/taein0926/SafeAlley/blob/main/docs/natural-language.md) · [VM 배포 검증](https://github.com/taein0926/SafeAlley/blob/main/docs/vm-deployment-2026-11-03.md)
 
-- **입력과 결과의 구분**: 안전골목의 입력 미리보기와 실제 계산 조건, AI 페르소나의 모델 제안과 실제 이동 결과를 나누어 표시했습니다.
-- **실패와 기존 정보 보존**: 모델 응답 검사·개별 요청 실패 처리, 배포 전후 데이터·설정 보존을 확인했습니다.
-- **리뷰와 화면 기준**: PinUp에서 상태 타입에 대한 리뷰를 반영하고 기존 글꼴·간격 기준을 적용했습니다.
+### AI 페르소나 화재 대피 시뮬레이션
 
-## 사용 경험
+지하철역 화재 상황에서 가상 인물의 관측과 판단을 이동에 반영하는 연구용 PoC입니다. 기존 보행 엔진에 로컬 LLM을 연결하고 실행 설정을 조정해, 동일 모델과 입력을 사용한 100명 실험에서 **계산과 저장 시간을 65분 23초에서 46분 45초로 줄였습니다.**
 
-- 화면: TypeScript, JavaScript, React, styled-components, CesiumJS
-- 서버·데이터: Python, FastAPI, PostgreSQL/PostGIS
-- 개발 환경: Git/GitHub, Docker
-- AI 개발 도구: 안전골목·AI 페르소나 개발에 Codex, CS Wiki 개발에 Gemini CLI 활용
+[저장소](https://github.com/taein0926/ai-persona) · [공개 시연](https://taein0926.github.io/ai-persona/) · [GitHub Actions 배포](https://github.com/taein0926/ai-persona/blob/main/.github/workflows/deploy-pages.yml)
 
-## 다른 작업
+### 해안 미세 사람 탐지
 
-[CS Wiki](https://github.com/taein0926/cs-llm-wiki)는 원문을 Markdown 문서로 생성·저장하고 기존 사용자 메모를 보존하는 개인 도구입니다. 문서 생성 파이프라인과 Streamlit 문서 탐색 화면을 구현했으며, 채팅·CVE 검색 시연과 실제 구현의 범위는 README에 구분했습니다.
+해변과 해상 영상에 작게 찍힌 사람을 탐지하기 위해 SSPNet과 YOLO26m을 같은 평가 코드로 비교했습니다. SSPNet을 해변 영상으로 추가 학습한 뒤, **해변 영상의 정밀도는 11.1%에서 70.5%로 올랐고 해상 영상의 재현율은 78.0%에서 64.0%로 내려갔습니다.**
 
-## 연락처
+[비교 이미지와 전체 실험 결과](https://github.com/taein0926/coastal-tiny-person-detection)
 
-[kimtaein0926@gmail.com](mailto:kimtaein0926@gmail.com)
+## 추가 프로젝트
+
+- **C++ AVL Tree Set** — 값 삽입과 균형 처리를 담당하고, 순위 조회의 경계 조건을 Google Test로 확인했습니다.
+- **AI CS Wiki** — 학습 자료를 Markdown으로 생성하고, 문서를 다시 생성할 때 기존 사용자 메모를 복원하도록 구현했습니다. [저장소](https://github.com/taein0926/cs-llm-wiki)
+- **집밥코인** — 식재료 등록의 입력과 API 응답을 처리하고, 레시피의 재료·조리 순서·영양 정보를 상세 화면에 연결했습니다. [담당 작업과 PR](https://github.com/taein0926/taein0926/blob/main/projects/zipbap-coin/README.md)
+- **PinUp** — 지도 기반 맛집 리뷰의 검색바와 가게 카드를 개발하고, 목록과 리뷰 상세를 오갈 때 헤더가 바뀌도록 연결했습니다. [담당 작업과 PR](https://github.com/taein0926/taein0926/blob/main/projects/pinup/README.md)
+- **GDGoC INHA 모집 웹페이지** — 모바일 너비에 맞춰 레이아웃을 조정하고, 브라우저 높이가 바뀌면 표시 영역의 높이를 다시 계산했습니다. [모바일 대응 PR](https://github.com/GDGoCINHA/23-24_Web_Promotion_Landing_Page/pull/2) · [높이 처리 PR](https://github.com/GDGoCINHA/23-24_Web_Promotion_Landing_Page/pull/4)
+
+[이메일](mailto:kimtaein0926@gmail.com)
